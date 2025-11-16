@@ -1,0 +1,78 @@
+
+Imported GTPyhop version 1.0.
+Messages from find_plan will be prefaced with 'FP>'.
+Messages from run_lazy_lookahead will be prefaced with 'RLL>'.
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+=== Run-Lookahead (every step) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+....
+
+[PLAN] coarse=False len=13 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=1
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+[PLAN] coarse=False len=13 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=1
+LOGS RUN: {'reward_total': 0.0, 'steps': 50, 'replans': 50, 'plan_lengths': [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 11, 12, 11, 12, 12, 12, 12, 12, 11, 11, 11, 10, 11, 11, 11, 11, 11, 11, 11, 13, 13, 13, 12, 13, 13, 13, 13, 12, 13, 13, 13, 13, 13, 13, 13, 12, 13, 13, 13], 'plan_time_ms': [0.37217140197753906, 0.2410411834716797, 0.23412704467773438, 0.23102760314941406, 0.23412704467773438, 0.23698806762695312, 0.26488304138183594, 0.2338886260986328, 0.23508071899414062, 0.23317337036132812, 0.22983551025390625, 0.21696090698242188, 0.28204917907714844, 0.23508071899414062, 0.24080276489257812, 0.2319812774658203, 0.23102760314941406, 0.23603439331054688, 0.23126602172851562, 0.21791458129882812, 0.21505355834960938, 0.21505355834960938, 0.2071857452392578, 0.21505355834960938, 0.21505355834960938, 0.21505355834960938, 0.22482872009277344, 0.21719932556152344, 0.21409988403320312, 0.2167224884033203, 0.2608299255371094, 0.2582073211669922, 0.25272369384765625, 0.23698806762695312, 0.2529621124267578, 0.2548694610595703, 0.2551078796386719, 0.2560615539550781, 0.23603439331054688, 0.26488304138183594, 0.2548694610595703, 0.2551078796386719, 0.2579689025878906, 0.2770423889160156, 0.2880096435546875, 0.27370452880859375, 0.24700164794921875, 0.2582073211669922, 0.2589225769042969, 0.2567768096923828]}
+
+=== Lazy-Lookahead (k=3) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+[PLAN] coarse=False len=12 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=0
+[ACT] ('analyse_host', 'h1') -> r_blue=0.000 | compromised=0
+[ACT] ('analyse_host', 'h10') -> r_blue=0.000 | compromised=0
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+....
+
+[PLAN] coarse=False len=13 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=1
+[ACT] ('analyse_host', 'h1') -> r_blue=0.000 | compromised=1
+LOGS LAZY: {'reward_total': 0.0, 'steps': 50, 'replans': 16, 'plan_lengths': [12, 12, 11, 10, 11, 11, 13, 13, 13, 13, 13, 13, 13, 11, 13, 13, 13], 'plan_time_ms': [0.25200843811035156, 0.24509429931640625, 0.21910667419433594, 0.2009868621826172, 0.21910667419433594, 0.21982192993164062, 0.2639293670654297, 0.263214111328125, 0.27632713317871094, 0.2617835998535156, 0.25773048400878906, 0.26607513427734375, 0.2651214599609375, 0.2231597900390625, 0.2598762512207031, 0.2579689025878906, 0.25916099548339844]}
+
+=== Coarse + Lazy (k=3) ===
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+[PLAN] coarse=True len=12 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=0
+[ACT] ('analyse_host', 'h1') -> r_blue=0.000 | compromised=0
+[ACT] ('analyse_host', 'h10') -> r_blue=0.000 | compromised=0
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+...
+[PLAN] coarse=True len=11 [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4')]...
+[ACT] ('analyse_host', 'h0') -> r_blue=0.000 | compromised=0
+[ACT] ('analyse_host', 'h1') -> r_blue=0.000 | compromised=1
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+
+LOGS COARSE: {'reward_total': 0.0, 'steps': 50, 'replans': 16, 'plan_lengths': [12, 11, 12, 12, 12, 12, 12, 12, 12, 11, 11, 11, 11, 11, 11, 11, 11], 'plan_time_ms': [0.23794174194335938, 0.21719932556152344, 0.2357959747314453, 0.23794174194335938, 0.23317337036132812, 0.23508071899414062, 0.23412704467773438, 0.2491474151611328, 0.23293495178222656, 0.21767616271972656, 0.2181529998779297, 0.2148151397705078, 0.2200603485107422, 0.21600723266601562, 0.2181529998779297, 0.21600723266601562, 0.22721290588378906]}

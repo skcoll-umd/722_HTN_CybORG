@@ -3,10 +3,10 @@ import numpy as np
 from gymnasium import spaces
 import sys, os
 
-sys.path.append(os.path.expanduser("~/PycharmProjects/mini_cage_public")) # adjust to your path
+sys.path.append(os.path.expanduser("/Users/susan/Documents/PhD/AI_Planning/Homeworks/code")) # adjust to your path
 
 from CybORG_plus_plus.mini_CAGE.minimal import SimplifiedCAGE, HOSTS
-# from CybORG_plus_plus.mini_CAGE.test_agents import Meander_minimal
+from CybORG_plus_plus.mini_CAGE.test_agent import Meander_minimal
 from CybORG_plus_plus.mini_CAGE.red_bline_agent import B_line_minimal
 
 

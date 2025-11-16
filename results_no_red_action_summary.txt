@@ -1,0 +1,447 @@
+
+Imported GTPyhop version 1.0.
+Messages from find_plan will be prefaced with 'FP>'.
+Messages from run_lazy_lookahead will be prefaced with 'RLL>'.
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+=== Run-Lookahead (every step) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+RUN {'reward_total': 0.0, 'steps': 50, 'replans': 50, 'plan_lengths': [12, 11, 11, 11, 11, 11, 11, 11, 11, 11, 10, 11, 10, 11, 11, 11, 11, 11, 10, 11, 11, 11, 11, 11, 11, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13], 'plan_time_ms': [0.4448890686035156, 0.2510547637939453, 0.24390220642089844, 0.24080276489257812, 0.20885467529296875, 0.2129077911376953, 0.21004676818847656, 0.21886825561523438, 0.2079010009765625, 0.27179718017578125, 0.23889541625976562, 0.24700164794921875, 0.31495094299316406, 0.2498626708984375, 0.24080276489257812, 0.2377033233642578, 0.23674964904785156, 0.21123886108398438, 0.21886825561523438, 0.2410411834716797, 0.2357959747314453, 0.2770423889160156, 0.2410411834716797, 0.2510547637939453, 0.20599365234375, 0.1971721649169922, 0.20885467529296875, 0.22792816162109375, 0.21004676818847656, 0.2090930938720703, 0.2090930938720703, 0.20575523376464844, 0.2067089080810547, 0.2071857452392578, 0.21195411682128906, 0.25200843811035156, 0.24819374084472656, 0.247955322265625, 0.24771690368652344, 0.2589225769042969, 0.2663135528564453, 0.247955322265625, 0.2586841583251953, 1.6129016876220703, 0.25391578674316406, 0.29587745666503906, 0.2639293670654297, 0.26798248291015625, 0.2579689025878906, 0.26106834411621094]}
+RUN → steps=50, replans=50, reward_total=0.000, avg_plan_len=11.54, avg_plan_time_ms=0.27
+
+=== Lazy-Lookahead (k=3) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+LAZY (k=3) {'reward_total': 0.0, 'steps': 50, 'replans': 16, 'plan_lengths': [12, 12, 12, 14, 14, 14, 13, 14, 14, 14, 13, 13, 13, 13, 13, 13, 13], 'plan_time_ms': [0.23603439331054688, 0.2307891845703125, 0.2319812774658203, 0.2751350402832031, 0.2741813659667969, 0.2720355987548828, 0.2567768096923828, 0.27108192443847656, 0.28896331787109375, 0.2689361572265625, 0.27179718017578125, 0.2589225769042969, 0.2548694610595703, 0.25200843811035156, 0.27108192443847656, 0.2760887145996094, 0.26702880859375]}
+LAZY(k=3) → steps=50, replans=16, reward_total=0.000, avg_plan_len=13.18, avg_plan_time_ms=0.26
+
+=== Coarse + Lazy (k=3) ===
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h10'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+FP> result = [('analyse_host', 'h0'), ('analyse_host', 'h1'), ('analyse_host', 'h11'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h7'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('remove_processes', 'h10'), ('restore_host', 'h10')] 
+
+
+        >> declare_methods exists to provide backward compatibility with
+        >> Pyhop. In the future, please use declare_task_methods instead.
+COARSE+LAZY (k=3) {'reward_total': 0.0, 'steps': 50, 'replans': 16, 'plan_lengths': [12, 12, 12, 12, 12, 12, 11, 11, 11, 11, 11, 11, 11, 13, 13, 13, 13], 'plan_time_ms': [0.23126602172851562, 0.23412704467773438, 0.2288818359375, 0.2448558807373047, 0.24890899658203125, 0.24509429931640625, 0.21195411682128906, 0.21195411682128906, 0.21386146545410156, 0.23221969604492188, 0.23293495178222656, 0.2281665802001953, 0.22220611572265625, 0.2512931823730469, 0.2639293670654297, 0.2758502960205078, 0.27680397033691406]}
+COARSE+LAZY(k=3) → steps=50, replans=16, reward_total=0.000, avg_plan_len=11.82, avg_plan_time_ms=0.24

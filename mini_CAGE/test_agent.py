@@ -123,7 +123,8 @@ class B_line_minimal(Base_agent):
 
 class Meander_minimal(Base_agent):
     def __init__(self, *args, **kwargs):
-        super(Base_agent).__init__(*args, **kwargs)
+        #super(Base_agent).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.subnet_structure = np.array([
             0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 2])
         self.num_hosts = len(self.subnet_structure)
