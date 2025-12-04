@@ -22,7 +22,7 @@ import copy, sys, pprint, re
 ################################################################################
 # How much information to print while the program is running
 
-verbose = 1
+verbose = 0
 """
 verbose is a global value whose initial value is 1. Its value determines how
 much debugging information GTPyhop will print:

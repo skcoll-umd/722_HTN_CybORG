@@ -17,30 +17,73 @@ def summarize(label: str, logs: dict):
         f"avg_plan_len={avg_len:.2f}, avg_plan_time_ms={avg_time:.2f}"
     )
 
-# # 1) Run-Lookahead (replan every action)
-# env = make_env()
-# print("=== Run-Lookahead (every step) ===")
-# logs_run = run_cage_controller(env, lazy_k=None, max_steps=10, verbose=False, use_coarse=False)
-# # print("RUN", logs_run)
-# summarize("RUN", logs_run)
-
-# 2) Lazy-Lookahead (k=3)
-env = make_env()
-print("\n=== Lazy-Lookahead w/ Red Meander(k=3) ===")
-logs_lazy = run_cage_controller(env, lazy_k=3, max_steps=50, verbose=True, use_coarse=False, red_policy=Meander_minimal())
-# print("LAZY (k=3) w/ Red Meander", logs_lazy)
-summarize("LAZY(k=3)", logs_lazy)
-
-# # 3) Coarse + Lazy (k=3)
-# env = make_env()
-# print("\n=== Coarse + Lazy (k=3) ===")
-# logs_coarse = run_cage_controller(env, lazy_k=3, max_steps=10, verbose=True, use_coarse=True)
-# # print("COARSE+LAZY (k=3)", logs_coarse)
-# summarize("COARSE+LAZY(k=3)", logs_coarse)
-
 # 1) Run-Lookahead w/ Red Meander (replan every action)
 env = make_env()
-print("=== Run-Lookahead w/ Red Meander (every step) ===")
-logs_run = run_cage_controller(env, lazy_k=None, max_steps=50, verbose=True, use_coarse=False, red_policy=Meander_minimal())
-# print("RUN+RED_MEANDER", logs_run)
-summarize("RUN+RED_MEANDER", logs_run)
+print("=== Run-Lookahead (every step) w/ Red Meander ===")
+logs_run = run_cage_controller(env, lazy_k=None, max_steps=50, verbose=False, use_coarse=False, red_policy=Meander_minimal())
+# print("RUN", logs_run)
+summarize("RUN", logs_run)
+
+# 2) Lazy-Lookahead (k=2) w/ Red Meander
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Red Meander(k=2) ===")
+logs_lazy = run_cage_controller(env, lazy_k=2, max_steps=50, verbose=False, use_coarse=False, red_policy=Meander_minimal())
+# print("LAZY (k=2) w/ Red Meander", logs_lazy)
+summarize("LAZY(k=3)", logs_lazy)
+
+# 3) Lazy-Lookahead (k=4) w/ Red Meander
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Red Meander(k=4) ===")
+logs_lazy = run_cage_controller(env, lazy_k=4, max_steps=50, verbose=False, use_coarse=False, red_policy=Meander_minimal())
+# print("LAZY (k=4) w/ Red Meander", logs_lazy)
+summarize("LAZY(k=3)", logs_lazy)
+
+# 3) Lazy-Lookahead (k=8) w/ Red Meander
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Red Meander(k=8) ===")
+logs_lazy = run_cage_controller(env, lazy_k=8, max_steps=50, verbose=False, use_coarse=False, red_policy=Meander_minimal())
+# print("LAZY (k=8) w/ Red Meander", logs_lazy)
+summarize("LAZY(k=8)", logs_lazy)
+
+# 3) Lazy-Lookahead (k=12) w/ Red Meander
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Red Meander(k=12) ===")
+logs_lazy = run_cage_controller(env, lazy_k=12, max_steps=50, verbose=False, use_coarse=False, red_policy=Meander_minimal())
+# print("LAZY (k=8) w/ Red Meander", logs_lazy)
+summarize("LAZY(k=12)", logs_lazy)
+#==============================================================
+
+# 1) Run-Lookahead w/ BLine (replan every action)
+env = make_env()
+print("=== Run-Lookahead (every step) w/ BLine ===")
+logs_run = run_cage_controller(env, lazy_k=None, max_steps=50, verbose=False, use_coarse=False, red_policy=B_line_minimal())
+# print("RUN", logs_run)
+summarize("RUN", logs_run)
+
+# 2) Lazy-Lookahead (k=2) w/ Bline
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Bline(k=2) ===")
+logs_lazy = run_cage_controller(env, lazy_k=2, max_steps=50, verbose=False, use_coarse=False, red_policy=B_line_minimal())
+# print("LAZY (k=2) w/ Bline", logs_lazy)
+summarize("LAZY(k=3)", logs_lazy)
+
+# 3) Lazy-Lookahead (k=4) w/ Bline
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Bline(k=4) ===")
+logs_lazy = run_cage_controller(env, lazy_k=4, max_steps=50, verbose=False, use_coarse=False, red_policy=B_line_minimal())
+# print("LAZY (k=4) w/ Bline", logs_lazy)
+summarize("LAZY(k=3)", logs_lazy)
+
+# 3) Lazy-Lookahead (k=8) w/ Bline
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Bline(k=8) ===")
+logs_lazy = run_cage_controller(env, lazy_k=8, max_steps=50, verbose=False, use_coarse=False, red_policy=B_line_minimal())
+# print("LAZY (k=8) w/ Bline", logs_lazy)
+summarize("LAZY(k=8)", logs_lazy)
+
+# 4) Lazy-Lookahead (k=12) w/ Bline
+env = make_env()
+print("\n=== Lazy-Lookahead w/ Bline(k=12) ===")
+logs_lazy = run_cage_controller(env, lazy_k=12, max_steps=50, verbose=False, use_coarse=False, red_policy=B_line_minimal())
+# print("LAZY (k=12) w/ Bline", logs_lazy)
+summarize("LAZY(k=12)", logs_lazy)

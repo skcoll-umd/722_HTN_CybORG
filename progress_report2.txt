@@ -1,0 +1,238 @@
+
+Imported GTPyhop version 1.0.
+Messages from find_plan will be prefaced with 'FP>'.
+Messages from run_lazy_lookahead will be prefaced with 'RLL>'.
+
+=== Lazy-Lookahead w/ Red Meander(k=3) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h6'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('analyse_host', 'h10'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=29 [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4')]...
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=1
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=1
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=1
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=25 [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4')]...
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=1
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=2
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=-0.200 | compromised=3
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.200 | compromised=2
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.200 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=25 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=-0.200 | compromised=2
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.400 | compromised=2
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.400 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=25 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=-0.400 | compromised=2
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.600 | compromised=3
+[ACT] ('place_decoy', 'h2') -> r_blue=-0.600 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.600 | compromised=3
+[ACT] ('remove_processes', 'h10') -> r_blue=-2.600 | compromised=3
+[ACT] ('remove_processes', 'h10') -> r_blue=-2.600 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h3'), ('analyse_host', 'h4')] 
+
+[PLAN] coarse=False len=24 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.600 | compromised=3
+[ACT] ('remove_processes', 'h10') -> r_blue=-2.600 | compromised=3
+LAZY(k=3) → steps=20, replans=6, reward_total=-14.200, avg_plan_len=25.71, avg_plan_time_ms=1.78
+=== Run-Lookahead w/ Red Meander (every step) ===
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('analyse_host', 'h10'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=28 [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4')]...
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=1
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('analyse_host', 'h10'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=28 [('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4')]...
+[ACT] ('place_decoy', 'h2') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h7'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h8'), ('analyse_host', 'h9'), ('analyse_host', 'h10'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=29 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=0.000 | compromised=2
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3')]...
+[ACT] ('remove_processes', 'h10') -> r_blue=-0.200 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h5'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=28 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.200 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h9'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=27 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.200 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.200 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.200 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.200 | compromised=4
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h7'), ('restore_host', 'h7'), ('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=28 [('remove_processes', 'h7'), ('restore_host', 'h7'), ('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h7') -> r_blue=-0.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-0.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4'), ('analyse_host', 'h0')] 
+
+[PLAN] coarse=False len=26 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h2'), ('analyse_host', 'h3'), ('analyse_host', 'h4')] 
+
+[PLAN] coarse=False len=25 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h3'), ('analyse_host', 'h4')] 
+
+[PLAN] coarse=False len=24 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=3
+FP> find_plan, verbose=1:
+    state = s
+    todo_list = [('secure_network',)]
+[DEBUG M_SECURE_DONE] effective_compromised = set()
+FP> result = [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h3'), ('place_decoy', 'h4'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h8'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h10'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('place_decoy', 'h11'), ('analyse_host', 'h1'), ('analyse_host', 'h3'), ('analyse_host', 'h4')] 
+
+[PLAN] coarse=False len=24 [('remove_processes', 'h8'), ('remove_processes', 'h10'), ('remove_processes', 'h10'), ('place_decoy', 'h2'), ('place_decoy', 'h2'), ('place_decoy', 'h2')]...
+[ACT] ('remove_processes', 'h8') -> r_blue=-2.400 | compromised=4
+RUN+RED_MEANDER → steps=20, replans=20, reward_total=-16.400, avg_plan_len=26.35, avg_plan_time_ms=1.75

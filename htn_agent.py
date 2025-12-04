@@ -12,7 +12,7 @@ from minicage_adapter import (
 from red_policy import NoOpRed
 
 # ---- GTPyhop (global current_domain style) ----
-from gtpyhop import State, Domain, declare_operators, find_plan, declare_task_methods
+from gtpyhop import State, Domain, declare_actions, find_plan, declare_task_methods
 
 # Create a domain FIRST so current_domain is set
 Domain("cage_htn")  # sets global current_domain internally
@@ -246,7 +246,7 @@ def restore_host(s: State, h: str):
     return s
 
 # Register actions in current_domain
-declare_operators(sleep, analyse_host, place_decoy, remove_processes, restore_host)
+declare_actions(sleep, analyse_host, place_decoy, remove_processes, restore_host)
 
 # ---------- HTN methods ----------
 def m_secure_network_handle_compromised(s):
@@ -317,7 +317,7 @@ def m_secure_network_done(s):
     (You can optionally add extra conditions like 'all_scanned' or 'no_decoys_left'.)
     """
     eff = effective_compromised(s)
-    print("[DEBUG M_SECURE_DONE] effective_compromised =", eff)
+    # print("[DEBUG M_SECURE_DONE] effective_compromised =", eff)
 
     if eff:
         # Still have non-foothold compromises -> not done
@@ -487,19 +487,40 @@ def run_cage_controller(
     red_policy=None
 ) -> Dict[str, Any]:
     """
-    Run-Lookahead if lazy_k=None; Run-Lazy-Lookahead if lazy_k is int.
+    Run the Blue Agent HTN controller in the SimplifiedCAGE environment for a single episode.
 
-    Compatible with SimplifiedCAGE(num_envs=1, ...):
-      state, info = env.reset()
-      next_state, reward, done, info = env.step(red_action, blue_action)
+    Planning modes (controlled by `lazy_k`):
+      - Run-Lookahead (lazy_k is None):
+          Replan after *every* primitive Blue action.
+          This is the most reactive setting: each step calls the HTN planner
+          on the latest symbolic belief state.
 
-    reward is a dict {'Blue': (N,1), 'Red': (N,1)}.
+      - Run-Lazy-Lookahead (lazy_k is an int k >= 1):
+          Replan only once every `k` primitive Blue actions.
+          The controller:
+            1) Calls the planner to get a full plan (sequence of primitive tasks).
+            2) Executes up to `k` actions from that plan, *without* re-planning,
+               unless a high-level task triggers an earlier replan.
+            3) Re-enters the planner when k steps have been executed or the plan
+               is exhausted.
+          This reduces planning frequency at the cost of using a slightly stale plan.
 
-    We maintain a *symbolic belief state* `s` that:
-      - is rebuilt from Blue observations each step, and
-      - carries some memory across time (scanned, patched, decoy usage, etc).
+    Episode horizon:
+      - `max_steps` is a cap on the number of Blue actions in this episode.
+        Once we have taken `max_steps` environment steps, the episode terminates,
+        even if there is still a plan or compromised hosts remain.
+
+    Environment contract (SimplifiedCAGE with num_envs=1):
+      - state, info = env.reset()
+      - next_state, reward, done, info = env.step(red_batch, blue_batch)
+      - reward is a dict: {'Blue': (N, 1), 'Red': (N, 1)}
+
+    Symbolic belief state:
+      - We maintain a symbolic State `s` that is rebuilt from Blue's observation
+        each step but also carries *memory* about what we've scanned, patched,
+        and our decoy bookkeeping. This belief state is what the HTN planner
+        reasons about.
     """
-
     # --- Reset env and build initial symbolic state ---
     state, info = env.reset()
     blue_obs = state['Blue'][0]               # (6 * num_nodes,)
