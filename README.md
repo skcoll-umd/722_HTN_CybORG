@@ -5,7 +5,7 @@
 ![Planning](https://img.shields.io/badge/Planning-HTN%20(gtpyhop)-orange)
 
 ## Project Overview
-This repository contains a **Hierarchical Task Network (HTN)** based Blue Agent designed for the **CybORG CAGE Challenge 2**. 
+This repository contains a **Hierarchical Task Network (HTN)** based Blue Agent designed for the [**CybORG++ miniCAGE Challenge 2**](https://github.com/alan-turing-institute/CybORG_plus_plus). 
 
 Unlike Reinforcement Learning agents that learn a policy through trial and error, this agent uses **domain-specific planning logic** to decompose high-level defense goals (e.g., "Secure Network") into primitive actions (e.g., "Restore Host 0"). It features a **Lazy Lookahead** mechanism to balance reactive speed with long-term strategic planning.
 
@@ -47,7 +47,6 @@ graph TD
     Red -- "Red Action" --> Controller
 
 ## File Manifest
-## 📂 File Manifest
 
 | File Name | Role | Description |
 | :--- | :--- | :--- |
