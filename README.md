@@ -1,10 +1,10 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![CybORG](https://img.shields.io/badge/CybORG-CAGE%202-green)
+![CybORG++](https://img.shields.io/badge/CybORG-CAGE%202-green)
 ![Planning](https://img.shields.io/badge/Planning-HTN%20(gtpyhop)-orange)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ## Project Overview
-This repository implements an autonomous **Blue Agent** for the **CybORG CAGE Challenge 2** (Cyber Autonomy Gym for Experimentation). 
+This repository implements an autonomous **Blue Agent** for the **CybORG++ miniCAGE Challenge 2** (Cyber Autonomy Gym for Experimentation). 
 
 Unlike standard Reinforcement Learning (RL) agents that learn policies via trial-and-error, this agent utilizes **Hierarchical Task Network (HTN) Planning** via the `gtpyhop` library. It decomposes high-level defense goals (e.g., "Secure Network") into primitive cyber actions based on a rigorous priority hierarchy.
 
@@ -19,7 +19,7 @@ The agent features a **"Lazy Lookahead" Controller**, allowing it to balance the
 
 ## Architecture & Component Breakdown
 
-The system bridges the gap between the raw numerical simulation (CybORG) and logical planning (HTN).
+The system bridges the gap between the raw numerical simulation (CybORG++) and logical planning (GTPyhop).
 
 ```mermaid
 graph TD
@@ -75,8 +75,10 @@ graph TD
 ## Component Details
 ### Experimentation Layer
 Entry point for experiments. Initializes the environment and Red Agent. It runs the simulation loop, comparing different "Lazy Lookahead" factors ($k$).
-### Agent Layer
-Core logic and planning. Defines the HTN Domain (Tasks and Methods). Contains the run_cage_controller which decides when to call the planner and when to execute the next step of an existing plan.
+### Agent Controller
+Core logic for Blue Agent. Defines the HTN Domain (Tasks and Methods). Contains the run_cage_controller which decides when to call the planner and when to execute the next step of an existing plan.
+### Planning Layer 
+Interface to GTPyhop planner. State information is paseed to GTPyhop and a plan is returned to be execugted by the 
 ### Translation Layer
 Interface between Gym and Planner. Converts the CybORG++ miniCAGE observation vector into a Symbolic Python object. It also maps action strings (e.g., "restore_host h0") to integer IDs (e.g., 42).
 
@@ -84,7 +86,7 @@ Interface between Gym and Planner. Converts the CybORG++ miniCAGE observation ve
 ## File Manifest 
 | File Name | Role | Description |
 | :--- | :--- | :--- |
-| **`htn_agent.py`** | **The Brain** | Contains the core Hierarchical Task Network (HTN) logic. It defines the domain (`cage_htn`), the tasks (`secure_network`), and the `run_cage_controller` loop that manages planning execution and replanning intervals ($k$). |
+| **`htn_agent.py`** | **The Braßin** | Contains the core Hierarchical Task Network (HTN) logic. It defines the domain (`cage_htn`), the tasks (`secure_network`), and the `run_cage_controller` loop that manages planning execution and replanning intervals ($k$). |
 | **`minicage_adapter.py`** | **The Translator** | A bridge between the numerical simulation and symbolic planning. It converts raw 52-bit CybORG observations into `Symbolic` Python objects (sets of compromised hosts, etc.) and maps action strings to integer IDs. |
 | **`run_simplified_cage.py`** | **The Runner** | The main entry point for experiments. It initializes the environment and runs comparison tests between "Lazy Lookahead" (planning every $k$ steps) and "Full Lookahead" (planning every step) against different Red agents. |
 | **`red_policy.py`** | **The Adversary** | Provides wrapper classes for Red agents (like `Meander` and `B_line`) to ensure their observation and action shapes match what the `SimplifiedCAGE` environment expects. |
@@ -143,3 +145,7 @@ The agent's decision-making is governed by the HTN Domain defined in htn_agent.p
 Priority: Low If no threats are active and decoys are set:
 
  - The agent performs analyse_host (scanning) on unknown subnets to update its belief state regarding the network topology.
+
+##Acknowledgments
+* **CybORG++:** This project uses the CybORG++ enviroment based on tools and extensions provided by the [Alan Turing Institute's CybORG++](https://github.com/alan-turing-institute/CybORG_plus_plus) repository.
+* **GTPyhop:** This project utilizes the [**GTPyhop**](https://github.com/dananau/GTPyhop)library (a Python implementation of the SHOP algorithm) for Hierarchical Task Network planning.
